@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\SettingController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 

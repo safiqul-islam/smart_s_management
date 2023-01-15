@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
 use App\Models\Meta;
 
@@ -95,5 +95,9 @@ class SettingController extends Controller
         Artisan::call('migrate');
         $this->showToastrMessage('success', 'Migrated successfully.');
         return redirect()->back();
+    }
+
+    public function maintenanceMode(){
+        
     }
 }

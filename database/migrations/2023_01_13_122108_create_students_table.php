@@ -24,7 +24,6 @@ return new class extends Migration
             $table->enum('religion',['Islam','Hindu','Christian','Buddhism'])->nullable();
             $table->string('class')->nullable();
             $table->string('section')->nullable();
-            $table->string('section')->nullable();
             $table->string('address')->nullable();
             $table->string('phone')->nullable();
             $table->string('email')->nullable();
