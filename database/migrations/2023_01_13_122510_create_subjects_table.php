@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('subject_code')->nullable();
             $table->string('subject_name')->nullable();
             $table->string('subject_type')->nullable();
-            $table->string('class')->nullable();
+            $table->string('class_id')->nullable();
             $table->tinyInteger('status')->default('1');
             $table->timestamps();
         });

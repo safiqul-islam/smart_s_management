@@ -15,14 +15,14 @@ return new class extends Migration
     {
         Schema::create('class_routines', function (Blueprint $table) {
             $table->id();
-            $table->string('day')->nullable();
+            $table->string('day_name')->nullable();
             $table->string('subject_code')->nullable();
             $table->string('subject_name')->nullable();
-            $table->string('section')->nullable();
             $table->string('subject_type')->nullable();
+            $table->string('section_id')->nullable();
             $table->bigInteger('class_id')->nullable();
             $table->bigInteger('teacher_id')->nullable();
-            $table->time('time')->nullable();
+            $table->string('time')->nullable();
             $table->date('date')->nullable();
             $table->tinyInteger('status')->default('1');
             $table->timestamps();

@@ -17,8 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('title')->nullable();
             $table->longText('details')->nullable();
+            $table->string('for_who')->nullable();
             $table->string('posted_by')->nullable();
-            $table->date('date')->nullable();
+            $table->datetime('date')->nullable();
             $table->tinyInteger('status')->default('1');
             $table->timestamps();
         });

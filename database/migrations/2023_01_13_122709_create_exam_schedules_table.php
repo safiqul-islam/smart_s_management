@@ -17,13 +17,13 @@ return new class extends Migration
             $table->id();
             $table->string('day')->nullable();
             $table->string('subject_code')->nullable();
-            $table->string('exam_name')->nullable();
-            $table->string('section')->nullable();
+            $table->string('subject_name')->nullable();
             $table->string('subject_type')->nullable();
+            $table->string('section_id')->nullable();
             $table->bigInteger('class_id')->nullable();
             $table->bigInteger('teacher_id')->nullable();
-            $table->time('start_time')->nullable();
-            $table->time('end_time')->nullable();
+            $table->string('start_time')->nullable();
+            $table->string('end_time')->nullable();
             $table->date('date')->nullable();
             $table->tinyInteger('status')->default('1');
             $table->timestamps();

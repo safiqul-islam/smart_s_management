@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Models\ClassInfo;
+namespace App\Models\classSchedule;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ClassInfo extends Model
+class ClassSchedule extends Model
 {
     use HasFactory;
 }

@@ -16,17 +16,15 @@ return new class extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('user_id')->nullable();
-            $table->bigInteger('student_id')->nullable();
+            $table->string('student_id')->nullable();
             $table->bigInteger('photo_id')->nullable();
             $table->date('date_of_birth')->nullable();
-            $table->enum('blood_group',['A+','A-','B+','B-','O+','O-'])->nullable();
+            $table->enum('blood_group',['A+','A-','B+','B-','O+','O-','AB+'])->nullable();
             $table->enum('gender',['Male','Female','Other'])->nullable();
             $table->enum('religion',['Islam','Hindu','Christian','Buddhism'])->nullable();
-            $table->string('class')->nullable();
-            $table->string('section')->nullable();
-            $table->string('address')->nullable();
-            $table->string('phone')->nullable();
-            $table->string('email')->nullable();
+            $table->biginteger('class_id')->nullable();
+            $table->biginteger('section_id')->nullable();
+            $table->longtext('address')->nullable();
             $table->longText('short_bio')->nullable();
             $table->tinyInteger('status')->default('1');
             $table->timestamps();
