@@ -20,6 +20,7 @@ Route::get('/', function () {
 });
 
 
+
 //Start:: Maintenance Mode
 Route::get('maintenance-mode-changes', [SettingController::class, 'maintenanceMode'])->name('maintenance');
 Route::post('maintenance-mode-changes', [SettingController::class, 'maintenanceModeChange'])->name('maintenance.change');
