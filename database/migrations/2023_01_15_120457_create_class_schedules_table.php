@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('class_infos', function (Blueprint $table) {
+        Schema::create('class_schedules', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('teacher_id')->nullable();
             $table->string('teacher_name')->nullable();
             $table->enum('gender',['Male','Female','Other'])->nullable();
-            $table->string('class')->nullable();
-            $table->string('subject')->nullable();
-            $table->string('section')->nullable();
+            $table->biginteger('class_id')->nullable();
+            $table->biginteger('subject_id')->nullable();
+            $table->biginteger('section_id')->nullable();
             $table->time('time')->nullable();
             $table->date('date')->nullable();
             $table->string('phone')->nullable();
@@ -37,6 +37,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('class_infos');
+        Schema::dropIfExists('class_schedules');
     }
 };

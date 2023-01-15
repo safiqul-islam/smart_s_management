@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('room_number')->nullable();
             $table->enum('room_type',['Small','Medium','Large'])->nullable();
             $table->integer('bed_number')->nullable();
-            $table->float('cost_per_bed')->nullable();
+            $table->decimal('cost_per_bed',12,2)->nullable();
             $table->tinyInteger('status')->default('1');
             $table->timestamps();
         });
